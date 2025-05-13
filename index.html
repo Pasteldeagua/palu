@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Biografía</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fdf6ff; /* fondo suave lila */
+      color: #2b2b2b;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      border: 2px solid #d1c4e9;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(150, 120, 200, 0.2);
+    }
+    h1 {
+      color: #6a1b9a;
+      text-align: center;
+    }
+    img {
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
+      max-width: 200px;
+      box-shadow: 0 0 8px rgba(106, 27, 154, 0.4);
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .section h2 {
+      color: #3949ab;
+      text-align: center;
+    }
+    .section p {
+      background-color: #ede7f6;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Mi Biografía</h1>
+
+  <div class="section">
+    <h2>Sobre mí</h2>
+    <p>Hola, Mi nombre es Valentina Madai, nací en Cancún Quintana Roo el 7 de abril del 2009,
+     me mandaron con mi papá a la edad de 6 años ya qué mi escuela quedaba más cerca, viví con él 2 años 
+      hasta qué me cambié de escuela,mis papás siempre se han llevado bien, logrando qué la comunicación sea cómoda alrededor.</p>
+
+  </div>
+
+  <div class="section">
+    <h2>Mis hobbies</h2>
+    <p>Me gusta dibujar y pintar con acrílico, me gustaba mucho desde pequeña me ha llamado mucho la atención,
+     aprendía con lo qué tenía hasta ahora qué se va mejorando, mi deporte favorito es el básquet, me gusta mucho verlo
+     con mi papá.</p>
+
+  </div>
+
+  <div class="section">
+    <h2>Mis metas</h2>
+    <p>Bueno, gracias a eso quiero dedicarme a la arquitectura, ya varios en mi familia han ido por esa carrera,
+     gracias a eso tengo un apoyo gracias a ellos.</p>
+
+  </div><div class="section">
+  <h2>Mis hobbies</h2>
+  <table>
+    <tr>
+      <th>Tipo</th>
+      <th>Descripción</th>
+    </tr>
+    <tr>
+      <td>Lectura</td>
+      <td>Me encanta leer historias de romance porque me hacen imaginar diferentes mundos y
+         emociones intensas.</td>
+    </tr>
+    <tr>
+      <td>Películas</td>
+      <td>Disfruto mucho ver la saga de Harry Potter, especialmente por su magia, aventura y 
+        el crecimiento de los personajes.</td>
+    </tr>
+    <tr>
+      <td>Música</td>
+      <td>Escucho a artistas como Humbe, Avicii y Måneskin. Me gusta cómo cada uno transmite
+         diferentes emociones, desde lo profundo hasta lo energético.</td>
+    </tr>
+  </table>
+</div>
+
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
